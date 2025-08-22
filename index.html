@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>R_weather-app</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🌦 Riddhi's Weather App</h1>
+    <form id="weatherForm">
+      <input type="text" id="cityInput" placeholder="Enter city name" autocomplete="off" required />
+      <button type="submit">Get Weather</button>
+      <div id="suggestions"></div>
+    </form>
+    <div id="weatherInfo" class="hidden">
+      <h2 id="location"></h2>
+      <img id="weatherIcon" alt="Weather Icon" />
+      <p id="temperature"></p>
+      <p id="description"></p>
+    </div>
+    <p id="error" class="error-message"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
